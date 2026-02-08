@@ -1,61 +1,27 @@
 \documentclass[12pt, a4paper]{article}
 
-% Básicos de TeX
-\usepackage[portuguese]{babel}
-\usepackage{graphicx}
-\usepackage{setspace}
-\usepackage{caption}
-\usepackage{float}
-\usepackage{indentfirst}
-\setlength{\parindent}{1cm}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks=true,
-    urlcolor=blue,
-    linkcolor=blue,
-    citecolor=blue,
-    pdfborder={0 0 0},
-    pdfstartview=FitH,
-    hidelinks       
-}
-\usepackage[ 
-    left=2.25cm,
-    right=2.25cm,
-    top=2.5cm,
-    bottom=2.5cm
-    ]{geometry}
-
-% Configurações de Fonte
-
+% 1. Engine de fonte (ESCOLHA UM)
 \usepackage{fontspec}
-% \usepackage{unicode-math}
 \setmainfont{Times New Roman}
+% OU para pdflatex:
+% \usepackage{mathptmx}
 
-% Configurações de ambientes nativos
+% 2. Seu pacote personalizado
+\usepackage{ModeloResumosExpandidos}
 
-\newcommand{\secao}[1]{%
-    \section*{\normalsize\textbf{#1}}%
-}
-\usepackage{titlesec}   
-\titlespacing*{\section}{0pt}{12pt}{0pt} 
+% 3. Configurações específicas do seu documento
+% (Substitua pelos dados reais)
+\configurarAutores{Nome Completo do Autor 1, Nome Completo do Autor 2}
+\configurarRodape{\textbf{Semana de Educação e Pesquisa em Matemática da UECE}\\ ISBN: 2317-6458}
 
-\usepackage{caption}
-\captionsetup[figure]{labelfont=bf, labelsep=period, justification=centering, singlelinecheck=false} 
+% \renewcommand{\refname}{Referências}
 
-\captionsetup[table]{labelsep=period, labelfont=bf, justification=centering, singlelinecheck=false}
+% \makeatletter
+% \renewcommand{\refname}{}      % remove título automático (article)
+% \renewcommand\@biblabel[1]{}   % remove [1], [2], ...
+% \makeatother
 
-\usepackage{fancyhdr}
-\usepackage{etoolbox}
+% \makeatletter
 
-\pagestyle{fancy}
-\fancyhf{} % Limpa tudo
-\renewcommand{\headrulewidth}{0pt} % Remove linha do cabeçalho
-
-% CABEÇALHO
-\fancyhead[L]{\footnotesize Prenome Nome Sobrenome, Prenome Nome Sobrenome, Prenome Nome Sobrenome}
-\fancyhead[R]{\thepage}
-
-% RODAPÉ    
-\fancyfoot[R]{\footnotesize \textbf{Semana de Educação e Pesquisa em Matemática da UECE}
-\\ ISBN: 2317-6458}
-
+% \renewcommand\@biblabel[1]{}   % remove [1], [2], ...
+% \makeatother

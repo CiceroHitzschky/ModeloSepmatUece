@@ -1,20 +1,17 @@
 \input{lib/preambulo}
+% \usepackage{ModeloResumosExpandidos}
 
 \begin{document}
 \thispagestyle{plain}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=5.6 in, height=1.4 in]{lib/logoSepmat.png}
+\logoSepmat
 
-\end{figure}
+\titulo{Instruções e Modelo para Autores de Resumos Expandidos da Semana de Educação e Pesquisa em Matemática - SEPMAT}
 
-% Título
+\vspace{0.5cm}
+
 \begin{center}
-    \textbf{\large Instruções e Modelo para Autores de Resumos Expandidos da Semana de Educação e Pesquisa em Matemática - SEPMAT}
-    
-    \vspace{0.5cm}
-    
+
     % Autores
     \textbf{Prenome Nome Sobrenome\textsuperscript{1}, Prenome Nome Sobrenome\textsuperscript{2},}
     
@@ -39,16 +36,20 @@
     \textsuperscript{6}Universidade Estadual do Ceará, Nome do Centro/Faculdade, e-mail: professor@uece.br
 \end{center}
 
-% Resumo
-% \vspace{12pt}
-\begin{quote}
-    % \setlength{\leftskip}{0.1 cm}
-    % \setlength{\rightskip}{0.8 cm}
-    
-    \textbf{RESUMO.} Este metaresumo descreve o estilo a ser usado na confecção de resumo expandido para publicação nos anais da VIII Semana de Educação e Pesquisa em Matemática - SEPMAT. O resumo expandido deverá conter as seguintes seções: RESUMO, INTRODUÇÃO, METODOLOGIA, RESULTADOS E DISCUSSÃO, CONSIDERAÇÕES FINAIS e REFERÊNCIAS. A fonte deve ser Times New Roman, o espaçamento entre linhas deve ser simples, e o parágrafo deve ser justificado. O resumo expandido deve ter um mínimo de 03 (três) e um máximo de 04 (quatro) laudas. Este metaresumo deve ser baixado e usado pelo autor como base para a escrita de seu texto.
-    
-    Palavras-chave: Primeira. Segunda. Terceira.
-\end{quote}
+\resumo{%
+    Este metaresumo descreve o estilo a ser usado na confecção de resumo 
+    expandido para publicação nos anais da VIII Semana de Educação e 
+    Pesquisa em Matemática - SEPMAT. O resumo expandido deverá conter 
+    as seguintes seções: RESUMO, INTRODUÇÃO, METODOLOGIA, RESULTADOS E 
+    DISCUSSÃO, CONSIDERAÇÕES FINAIS e REFERÊNCIAS. A fonte deve ser 
+    Times New Roman, o espaçamento entre linhas deve ser simples, e o 
+    parágrafo deve ser justificado. O resumo expandido deve ter um 
+    mínimo de 03 (três) e um máximo de 04 (quatro) laudas. Este 
+    metaresumo deve ser baixado e usado pelo autor como base para a 
+    escrita de seu texto.
+}{%
+    Primeira. Segunda. Terceira.
+}
 
 \vspace*{0.2cm}
 
@@ -63,6 +64,9 @@
 
 % Seção 4
 \input{secoes/ConsideracoesFinais}
+
+% Referências
+\input{secoes/referencias}
 
 \vspace{1cm}
 
